@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    @apply 
+    self-center 
+    text-3xl
+    font-semibold 
+    whitespace-nowrap
+    dark:text-red-500;
+}
+
+.background {
+    @apply
+    bg-gray-600;
+}
+
+.heading {
+    @apply 
+    flex items-center 
+    justify-between 
+    flex-wrap 
+    bg-gray-800 
+    p-6;
+}
+
+.menu {
+    @apply container flex flex-wrap items-center justify-between mx-auto;
+}
+
+.center {
+    @apply flex items-center;
+}
+
+.format {
+    @apply 
+    flex flex-col 
+    p-4 mt-4 border 
+    border-gray-100 rounded-lg bg-gray-50 
+    md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white
+    dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700;
+}
+
+.menubtn {
+    @apply 
+    block mt-4 
+    sm:inline-block 
+    sm:mt-0 text-rose-600
+    hover:text-white mr-4;
+}
+
+.searchtitle {
+    @apply
+    text-3xl 
+    font-bold 
+    pb-2
+    text-rose-600;
+}
+
+.searchbox {
+    @apply
+    border-2 
+    px-2 py-1
+    w-auto
+    rounded-md 
+    mt-2 ml-2
+}
+
+.resulttitle {
+    @apply
+    text-3xl 
+    font-bold 
+    pb-2
+    text-black;
+}
+
+.searchbtn {
+    @apply
+    bg-rose-700
+    text-white
+    px-5 py-1 rounded-lg mx-4
+}
+
+.about {
+    @apply
+    p-4
+    bg-red-600
+    text-white
+    text-lg
+    
+}
+
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}

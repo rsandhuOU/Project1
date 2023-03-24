@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Player</title>
+    <link href="/dist/output.css" rel="stylesheet"  />
+    
+</head>
+<body class = "background">
+    <nav class="heading">
+        <div class="menu">
+            <a href="homepage.html" class= "flex items-center">
+                <img src="../img/NBA-logo.jpg" class="h-14 mr-7 sm:h-18" alt="NBA Logo" />
+                <span class="logo">NBA Basketball</span>
+            </a>
+            <div>
+                <ul class="format">
+                    <li>
+                        <a href="./searchplayer.html" class="menubtn">Search Player</a>
+                    </li>
+                    <li>
+                        <a href="./standings.html" class="menubtn">Standings</a>
+                    </li>
+                    <li>
+                        <a href="./games.html" class="menubtn">Games</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="menubtn">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container items-center mx-auto my-10">
+        <h1 class="searchtitle">
+            Search NBA Player 2016-2023
+        </h1>
+        <input class="searchbox" type="text" placeholder="Search by Last Name">
+        <button class="searchbtn">
+            Search
+        </button>
+        <BR><BR>
+        <div class="result px-2 bg-red-600">
+        </div>
+    </div>
+    <script type="module" src="../javascript/main.js"></script>
+</body>
+</html>
